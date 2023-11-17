@@ -1,4 +1,6 @@
 from flask import Flask, request, jsonify
+# from fastapi import FastAPI
+# from fastapi.responses import RedirectResponse
 import pickle
 import numpy as np
 import pandas as pd
@@ -34,5 +36,5 @@ def predict():
     return jsonify({'Attrition': str(result)})
 
 #
-# if __name__ == '__main__':
-#     app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
