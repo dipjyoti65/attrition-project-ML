@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 import pandas as pd
 
-model = pickle.load(open('randomforest_modelY.pkl', 'rb'))
+model = pickle.load(open('randomforest_modelY .pkl', 'rb'))
 
 app = Flask(__name__)
 
@@ -33,5 +33,5 @@ def predict():
     return jsonify({'Attrition': str(result)})
 
 
-# if __name__ == '__main__':
-#     app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
